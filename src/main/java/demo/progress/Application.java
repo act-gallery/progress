@@ -51,6 +51,7 @@ public class Application {
     @Async
     @ReportProgress
     @Command(name = "countdown.track", help = "countdown the number and track")
+    @GetAction("~count-down~")
     public void countdownAndReportProgress(
             @Required("specify the number") int number,
             ProgressGauge progressGauge
